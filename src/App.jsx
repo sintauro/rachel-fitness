@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import RoutinesPage from './pages/RoutinesPage';
-import PaymentPage from './pages/PaymentPage';
+import HomePage from './components/HomePage.jsx';
+import RoutinesPage from './components/RoutinesPage.jsx';
+import PaymentPage from './components/PaymentPage.jsx';
+
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
