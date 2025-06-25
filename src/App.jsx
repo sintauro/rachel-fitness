@@ -16,7 +16,7 @@ export default function App() {
       case 'routines':
         return <RoutinesPage />;
       case 'payment':
-        return <PaymentPage />;
+         return <PaymentPage />;
       default:
         return <HomePage setCurrentPage={setCurrentPage} />;
     }
