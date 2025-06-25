@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function PaymentPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -31,9 +29,11 @@ function PaymentPage() {
             required
           />
 
+          {/* Simulated Stripe Card Input */}
           <div className="p-4 border rounded bg-gray-50">
             <label className="block text-sm text-gray-600 mb-1">Número de tarjeta</label>
             <input type="text" placeholder="4242 4242 4242 4242" className="w-full p-2 border rounded bg-white" readOnly />
+
             <div className="mt-3 flex gap-3">
               <input type="text" placeholder="MM/AA" className="w-full p-2 border rounded bg-white" readOnly />
               <input type="text" placeholder="CVC" className="w-full p-2 border rounded bg-white" readOnly />
@@ -51,5 +51,3 @@ function PaymentPage() {
     </section>
   );
 }
-
-export default PaymentPage;
